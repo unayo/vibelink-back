@@ -44,4 +44,3 @@ vibelink-back/
 └── vite.config.ts          # Vite 設定
 
 ```
-# vibelink-back
