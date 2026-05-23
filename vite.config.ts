@@ -1,4 +1,4 @@
-import { fileURLToPath, resolve, URL } from 'node:url'
+import { fileURLToPath, URL } from 'node:url'
 
 import vue from '@vitejs/plugin-vue'
 import { defineConfig } from 'vite'
@@ -14,14 +14,6 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-      },
-      output: {
-        dir: resolve(__dirname, 'dist'),
-      },
-    },
   },
   css: {
     preprocessorOptions: {
