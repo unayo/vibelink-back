@@ -1,3 +1,7 @@
+<img width="1257" height="666" alt="截圖 2026-05-24 下午3 49 15" src="https://github.com/user-attachments/assets/02866136-c25f-4e2d-8264-725c9c348307" />
+
+<img width="1257" height="663" alt="截圖 2026-05-24 下午3 49 27" src="https://github.com/user-attachments/assets/e86de30a-29eb-49cf-8b1b-d35cfda84e16" />
+
 # TypeScript - 商品管理系統
 
 這是一個基於 Vue 3 和 TypeScript 的商品管理系統練習。
