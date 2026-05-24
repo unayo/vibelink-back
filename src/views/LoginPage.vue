@@ -41,7 +41,7 @@ const handleLogin = async () => {
             <div class="login-image-section col-lg-6 d-none d-lg-block">
               <div class="d-flex justify-content-center align-items-center text-secondary">
                 <img
-                  src="https://images.unsplash.com/photo-1702754253690-a3d9e4e68511?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyMHx8fGVufDB8fHx8fA%3D%3D"
+                  src="https://images.unsplash.com/photo-1692027504963-4858d51a7ba1?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                   alt=""
                   class="img-fluid"
                 />

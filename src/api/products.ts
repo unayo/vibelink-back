@@ -1,16 +1,3 @@
-// ==========================================
-// TypeScript 練習題目 - 商品 API 請求函式
-// ==========================================
-
-// 🎯 練習目標：
-// 1. 學習函式型別定義
-// 2. 理解泛型 (Generic) 的使用
-// 3. 熟悉 Promise 和 AxiosResponse 的型別
-
-// 📝 練習說明：
-// 請為以下函式加上正確的 TypeScript 型別註解
-// 提示：需要從 @/types/product 匯入相關型別
-
 import type {CreateProductParams, GetProductsResponse, CreateProductResponse, EditProductParams,EditProductResponse, DeleteProductResponse,UploadImageResponse} from '@/types/product'
 import axios from 'axios'
 import type {AxiosResponse} from 'axios'
