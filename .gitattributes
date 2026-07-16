@@ -1,1 +1,5 @@
 * text=auto eol=lf
+
+# 第三方 Bootstrap 樣式檔，排除於 GitHub 語言統計（避免 repo 被誤標為 SCSS）
+src/assets/styles/helpers/_variables.scss linguist-vendored
+src/assets/styles/helpers/_variables-dark.scss linguist-vendored
