@@ -1,29 +1,23 @@
 <script setup lang="ts">
-// TODO: 匯入 API 函式
 import { apiCreateProduct, apiEditProduct } from '@/api/products'
 import { useImageUpload } from '@/composable/useImageUpload'
 import { useProductForm } from '@/composable/useProductData'
 
-// TODO: 匯入型別定義
 import type { ProductData } from '@/types/product'
 import { Modal } from 'bootstrap'
 
 import { computed, onMounted, onUnmounted, ref, useTemplateRef, watch } from 'vue'
 
-// TODO: 定義 Props 介面
 interface ProductModalProps {
   product: ProductData
 }
 
-// TODO: 定義 props
 const { product } = defineProps<ProductModalProps>()
 
 const emit = defineEmits(['get-products'])
 
-// TODO: 為模板引用加上型別註解
 const modalRef = useTemplateRef<HTMLElement>('modalRef')
 
-// TODO: 為 modal 變數加上型別註解
 let modal:Modal | null = null
 
 onMounted(() => {

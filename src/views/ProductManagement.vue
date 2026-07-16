@@ -1,5 +1,4 @@
 <script setup lang="ts">
-// TODO: 匯入 API 函式
 import { apiDeleteProduct, apiGetProducts } from '@/api/products'
 
 import DeleteModal from '@/components/DeleteModal.vue'
@@ -8,17 +7,13 @@ import ProductModal from '@/components/ProductModal.vue'
 import type {Pagination, ProductData} from '@/types/product'
 import { onMounted, ref, useTemplateRef } from 'vue'
 
-// TODO: 為模板引用加上型別註解
 const productModalRef = useTemplateRef<InstanceType<typeof ProductModal>>('productModalRef')
 const deleteModalRef = useTemplateRef<InstanceType<typeof DeleteModal>>('deleteModalRef')
 
-// TODO: 為 currentPage 加上型別註解
 const currentPage = ref<string>('1')
 
-// TODO: 為 products 加上型別註解
 const products = ref<ProductData[]>([])
 
-// TODO: 為 pagination 加上型別註解
 const pagination = ref<Pagination>({
   total_pages: 0,
   current_page: 0,
@@ -43,7 +38,6 @@ onMounted(() => {
   getProducts()
 })
 
-// TODO: 為 getInitialProductData 函式加上型別註解
 const getInitialProductData = ():ProductData => ({
   id: '',
   title: '',
@@ -59,10 +53,8 @@ const getInitialProductData = ():ProductData => ({
   imagesUrl: [''],
 })
 
-// TODO: 為 tempProduct 加上型別註解
 const tempProduct = ref<ProductData>(getInitialProductData())
 
-// TODO: 為 openModal 函式加上型別註解
 const openModal = (product:ProductData | null = null) => {
   if (product) {
     tempProduct.value = { ...product, imagesUrl: product.imagesUrl ? [...product.imagesUrl] : [''] }
@@ -71,12 +63,10 @@ const openModal = (product:ProductData | null = null) => {
   productModalRef.value?.openModal()
 }
 
-// TODO: 為 openDeleteModal 函式加上型別註解
 const openDeleteModal = (productId: string) => {
   deleteModalRef.value?.openModal(() => handleDeleteProduct(productId))
 }
 
-// TODO: 為 handleDeleteProduct 函式加上型別註解
 const handleDeleteProduct = async (productId: string):Promise<void> => {
   try {
     await apiDeleteProduct(productId)
